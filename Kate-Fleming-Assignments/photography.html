@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Photography</title>
+        <link rel="stylesheet" type="text/css" href="photography.css">
+        
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        
+    </head>
+<body class="no-touch">
+   
+    <header class="gallery">
+        <nav class="nav">
+	        <ul>
+                <li class="current"><a href="#">PNW Photography</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+	        </ul>
+        </nav>
+    </header>
+     
+<div class="wrap">
+ 
+  <div class="box">
+    <div class="boxInner">
+      <img src="shoes.png" />
+      <div class="titleBox">Kerry Park 2014</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="seahawkss.png" />
+      <div class="titleBox">Last Pre-season Game 2014</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="paddleboarding.png" />
+      <div class="titleBox">Paddelboarding Alki 2014</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="idaho.png" />
+      <div class="titleBox">Idaho 2013</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="rattlesnake.png" />
+      <div class="titleBox">Top of Rattlesnake Lake 2014</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="trees.png" />
+      <div class="titleBox">Hiking 2012</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="hunting.png"/>
+      <div class="titleBox">Walla Walla, WA 2104</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="roseee.png"/>
+      <div class="titleBox">Hiking With the Rat Dog Rosie</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="whidbey.png"/>
+      <div class="titleBox">Whidbey Island 2012</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="maggielake.png"/>
+      <div class="titleBox">The patio</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="babyrosie.png"/>
+      <div class="titleBox">Rosie as a Puppy 2011</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="breakfast.png"/>
+      <div class="titleBox">Everyday</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="skylinehand.png"/>
+      <div class="titleBox">The Perfect Handstand 2013</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="roadtrip.png"/>
+      <div class="titleBox">California 2014</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="work.png"/>
+      <div class="titleBox">The Best Job Ever</div>
+    </div>
+  </div> 
+</div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+$(function(){
+   // See if this is a touch device
+   if ('ontouchstart' in window)
+   {
+      // Set the correct [touchscreen] body class
+      $('body').removeClass('no-touch').addClass('touch');
+     
+      // Add the touch toggle to show text when tapped
+      $('div.boxInner img').click(function(){
+         $(this).closest('.boxInner').toggleClass('touchFocus');
+      });
+   }
+    </script>
+ 
+</body>
+</html>
